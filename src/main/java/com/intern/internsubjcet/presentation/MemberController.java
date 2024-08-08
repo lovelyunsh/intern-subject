@@ -1,2 +1,10 @@
-package com.intern.internsubjcet.presentation;public class MemberController {
+package com.intern.internsubjcet.presentation;
+
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class MemberController {
+
+
 }

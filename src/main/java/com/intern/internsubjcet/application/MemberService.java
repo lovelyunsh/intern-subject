@@ -1,2 +1,4 @@
-package com.intern.internsubjcet.application;public interface MemberService {
+package com.intern.internsubjcet.application;
+
+public interface MemberService {
 }
