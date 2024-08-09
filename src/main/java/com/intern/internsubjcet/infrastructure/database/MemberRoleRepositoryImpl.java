@@ -6,7 +6,7 @@ import com.intern.internsubjcet.domain.repository.MemberRoleRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Repository;
 
-import java.util.Optional;
+import java.util.List;
 
 
 @Repository
@@ -15,7 +15,12 @@ class MemberRoleRepositoryImpl implements MemberRoleRepository {
     private final MemberRoleJpaRepository memberRoleJpaRepository;
 
     @Override
-    public Optional<MemberRole> findByMember(Member member) {
+    public MemberRole save(MemberRole memberRole) {
+        return memberRoleJpaRepository.save(memberRole);
+    }
+
+    @Override
+    public List<MemberRole> findByMember(Member member) {
         return memberRoleJpaRepository.findByMember(member);
     }
 

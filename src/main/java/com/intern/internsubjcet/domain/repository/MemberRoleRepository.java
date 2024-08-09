@@ -3,8 +3,10 @@ package com.intern.internsubjcet.domain.repository;
 import com.intern.internsubjcet.domain.model.Member;
 import com.intern.internsubjcet.domain.model.MemberRole;
 
-import java.util.Optional;
+import java.util.List;
 
 public interface MemberRoleRepository {
-    Optional<MemberRole> findByMember(Member member);
+    MemberRole save(MemberRole memberRole);
+
+    List<MemberRole> findByMember(Member member);
 }

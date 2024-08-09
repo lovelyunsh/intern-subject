@@ -4,9 +4,9 @@ import com.intern.internsubjcet.domain.model.Member;
 import com.intern.internsubjcet.domain.model.MemberRole;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import java.util.Optional;
+import java.util.List;
 
 interface MemberRoleJpaRepository extends JpaRepository<MemberRole, Long> {
 
-    Optional<MemberRole> findByMember(Member member);
+    List<MemberRole> findByMember(Member member);
 }
