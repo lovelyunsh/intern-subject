@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @Repository
 @RequiredArgsConstructor
-public class MemberRoleRepositoryImpl implements MemberRoleRepository {
+class MemberRoleRepositoryImpl implements MemberRoleRepository {
     private final MemberRoleJpaRepository memberRoleJpaRepository;
 
     @Override
