@@ -16,6 +16,7 @@ spring:
     properties:
       hibernate:
         format_sql: true
-
+jwt:
+  secret: wearoihssfwieEeirjaodsfXsaidhoqAJdsaoqwijeoqiajsdZ
 logging.level:
   org.hibernate.SQL: debug

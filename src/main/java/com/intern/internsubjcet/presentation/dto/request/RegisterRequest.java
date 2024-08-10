@@ -8,10 +8,10 @@ public record RegisterRequest(
         String nickname
 ) {
 
-    public Member of() {
+    public Member of(String encodePassword) {
         return Member.builder()
                 .username(username)
-                .password(password)
+                .password(encodePassword)
                 .nickname(nickname)
                 .build();
     }

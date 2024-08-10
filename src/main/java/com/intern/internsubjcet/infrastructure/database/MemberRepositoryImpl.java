@@ -19,8 +19,8 @@ class MemberRepositoryImpl implements MemberRepository {
     }
 
     @Override
-    public Optional<Member> findByUsernameAndPassword(String username, String password) {
-        return memberJpaRepository.findByUsernameAndPassword(username, password);
+    public Optional<Member> findByUsername(String username) {
+        return memberJpaRepository.findByUsername(username);
     }
 
     @Override
